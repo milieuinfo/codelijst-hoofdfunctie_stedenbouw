@@ -1,6 +1,6 @@
 [
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dagrecreatie_met_inbegrip_van_sport",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dagrecreatie_met_inbegrip_van_sport",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -12,7 +12,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dancing_restaurant_en_cafe",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dancing_restaurant_en_cafe",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -24,7 +24,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/detailhandel",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/detailhandel",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -37,7 +37,7 @@
         "theme": "http://www.eionet.europa.eu/gemet/concept/7193"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -49,7 +49,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/industrie_en_bedrijvigheid",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/industrie_en_bedrijvigheid",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -62,7 +62,7 @@
         "theme": "http://www.eionet.europa.eu/gemet/concept/19"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/kantoorfunctie_dienstverlening_en_vrije_beroepen",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/kantoorfunctie_dienstverlening_en_vrije_beroepen",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -74,7 +74,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/land_en_tuinbouw_in_de_ruime_zin",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/land_en_tuinbouw_in_de_ruime_zin",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -87,7 +87,7 @@
         "theme": "http://www.eionet.europa.eu/gemet/concept/232"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/militaire_functie",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/militaire_functie",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -99,7 +99,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/verblijfsrecreatie",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/verblijfsrecreatie",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -111,7 +111,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/wonen",
+        "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/wonen",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
@@ -123,7 +123,7 @@
         "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw"
     },
     {
-        "_id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw",
+        "id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw",
         "_type": [
             "http://www.w3.org/2004/02/skos/core#ConceptScheme"
         ],

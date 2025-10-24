@@ -1,4 +1,4 @@
-_id,notation,prefLabel,definition,collections,inScheme,topConceptOf,belongsTo,theme
+uri,notation,prefLabel,definition,collections,inScheme,topConceptOf,belongsTo,theme
 conceptscheme:hoofdfunctie_stedenbouw,Hoofdfunctie stedenbouw,Hoofdfunctie stedenbouw,"De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",,,,,
 wonen,Wonen,Wonen,Huisvesting van een gezin of alleenstaande,,conceptscheme:hoofdfunctie_stedenbouw,conceptscheme:hoofdfunctie_stedenbouw,,
 verblijfsrecreatie,Verblijfsrecreatie,Verblijfsrecreatie,"Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft",,conceptscheme:hoofdfunctie_stedenbouw,conceptscheme:hoofdfunctie_stedenbouw,,

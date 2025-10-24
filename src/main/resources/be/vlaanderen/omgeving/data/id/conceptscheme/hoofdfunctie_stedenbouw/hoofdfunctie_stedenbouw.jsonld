@@ -283,7 +283,11 @@
             "@id": "http://purl.org/dc/terms/identifier",
             "@type": "@id"
         },
-        "_id": {
+        "id": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "uri": {
             "@id": "@id",
             "@type": "@id"
         },
@@ -771,50 +775,22 @@
         "omg_periodoftime": "https://data.omgeving.vlaanderen.be/id/periodoftime/",
         "omg_service": "https://data.omgeving.vlaanderen.be/id/service/",
         "omg_vcard": "https://data.omgeving.vlaanderen.be/id/vcard/",
-        "org": "http://www.w3.org/ns/org#",
         "ovo": "http://data.vlaanderen.be/id/organisatie/",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "procedure": "https://data.omgeving.vlaanderen.be/id/concept/observatieprocedure/",
-        "property": "https://id.erfgoed.net/property/",
-        "provenancestatement": "https://data.omgeving.vlaanderen.be/id/provenancestatement/dataset/",
-        "prov": "http://www.w3.org/ns/prov#",
-        "qb": "http://purl.org/linked-data/cube#",
-        "quantitykind": "http://qudt.org/vocab/quantitykind/",
-        "qudt": "http://qudt.org/schema/qudt/",
-        "qudt-schema": "https://qudt.org/schema/qudt/",
-        "qudt-unit": "https://qudt.org/vocab/unit/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "rechtspers": "https://data.cbb.omgeving.vlaanderen.be/id/concept/orgrechtspersoonlijkheid/",
-        "refnis2025": "http://vocab.belgif.be/auth/refnis2025/",
         "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
-        "rov": "http://www.w3.org/ns/regorg#",
-        "schema": "https://schema.org/",
-        "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
-        "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-        "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-        "sh": "http://www.w3.org/ns/shacl#",
-        "site": "https://data.lzs.omgeving.vlaanderen.be/id/site/",
         "skos": "http://www.w3.org/2004/02/skos/core#",
-        "sosa": "http://www.w3.org/ns/sosa/",
-        "sosa-om": "http://www.w3.org/ns/sosa/om#",
         "spdx": "http://spdx.org/rdf/terms#",
         "ssd": "http://www.w3.org/ns/sparql-service-description#",
-        "ssn": "http://www.w3.org/ns/ssn/",
-        "ssn-system": "http://www.w3.org/ns/ssn/systems/",
-        "time": "http://www.w3.org/2006/time#",
-        "unit": "http://qudt.org/vocab/unit/",
         "vcard": "http://www.w3.org/2006/vcard/ns#",
-        "vlarem-klasse": "https://data.omgeving.vlaanderen.be/id/concept/vlarem-klasse/",
         "void": "http://rdfs.org/ns/void#",
-        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
-        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
         "@base": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/"
     },
     "graph": [
         {
-            "_id": "concept:dagrecreatie_met_inbegrip_van_sport",
+            "id": "concept:dagrecreatie_met_inbegrip_van_sport",
             "_type": [
                 "skos:Concept"
             ],
@@ -826,7 +802,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:dancing_restaurant_en_cafe",
+            "id": "concept:dancing_restaurant_en_cafe",
             "_type": [
                 "skos:Concept"
             ],
@@ -838,7 +814,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:detailhandel",
+            "id": "concept:detailhandel",
             "_type": [
                 "skos:Concept"
             ],
@@ -851,7 +827,7 @@
             "theme": "gemet:7193"
         },
         {
-            "_id": "concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
+            "id": "concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
             "_type": [
                 "skos:Concept"
             ],
@@ -863,7 +839,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:industrie_en_bedrijvigheid",
+            "id": "concept:industrie_en_bedrijvigheid",
             "_type": [
                 "skos:Concept"
             ],
@@ -876,7 +852,7 @@
             "theme": "gemet:19"
         },
         {
-            "_id": "concept:kantoorfunctie_dienstverlening_en_vrije_beroepen",
+            "id": "concept:kantoorfunctie_dienstverlening_en_vrije_beroepen",
             "_type": [
                 "skos:Concept"
             ],
@@ -888,7 +864,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:land_en_tuinbouw_in_de_ruime_zin",
+            "id": "concept:land_en_tuinbouw_in_de_ruime_zin",
             "_type": [
                 "skos:Concept"
             ],
@@ -901,7 +877,7 @@
             "theme": "gemet:232"
         },
         {
-            "_id": "concept:militaire_functie",
+            "id": "concept:militaire_functie",
             "_type": [
                 "skos:Concept"
             ],
@@ -913,7 +889,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:verblijfsrecreatie",
+            "id": "concept:verblijfsrecreatie",
             "_type": [
                 "skos:Concept"
             ],
@@ -925,7 +901,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "concept:wonen",
+            "id": "concept:wonen",
             "_type": [
                 "skos:Concept"
             ],
@@ -937,7 +913,7 @@
             "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
         },
         {
-            "_id": "conceptscheme:hoofdfunctie_stedenbouw",
+            "id": "conceptscheme:hoofdfunctie_stedenbouw",
             "_type": [
                 "skos:ConceptScheme"
             ],
