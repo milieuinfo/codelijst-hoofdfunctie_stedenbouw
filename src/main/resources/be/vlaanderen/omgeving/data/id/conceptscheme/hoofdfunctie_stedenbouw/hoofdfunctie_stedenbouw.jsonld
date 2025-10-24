@@ -1,0 +1,962 @@
+{
+    "@context": {
+        "about": {
+            "@id": "https://schema.org/about",
+            "@type": "@id"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "achternaam": {
+            "@id": "http://www.w3.org/2006/vcard/ns#family-name"
+        },
+        "actedOnBehalfOf": {
+            "@id": "http://www.w3.org/ns/prov#actedOnBehalfOf",
+            "@type": "@id"
+        },
+        "actie": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#actie",
+            "@language": "nl"
+        },
+        "adres": {
+            "@id": "http://www.w3.org/ns/locn#address"
+        },
+        "alternatieveId": {
+            "@id": "http://www.w3.org/ns/adms#identifier",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "applicableUnit": {
+            "@id": "http://qudt.org/schema/qudt/applicableUnit",
+            "@type": "@id"
+        },
+        "armoscode": {
+            "@type": "https://data.lzs.omgeving.vlaanderen.be/id/datatype/armoscode",
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "asWKT": {
+            "@id": "http://www.opengis.net/ont/geosparql#asWKT",
+            "@type": "http://www.opengis.net/ont/geosparql#wktLiteral"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "bedrijfsklasse": {
+            "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#juridischeKwalificatie",
+            "@type": "@id"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "boolean_value": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "casNumber": {
+            "@id": "http://dbpedia.org/ontology/casNumber"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "code": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "contact": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "contactLabel": {
+            "@id": "http://www.w3.org/2006/vcard/ns#fn"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "dateAccepted": {
+            "@id": "http://purl.org/dc/terms/dateAccepted",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "datum": {
+            "@id": "http://purl.org/dc/terms/date",
+            "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dc_identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc_language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc_source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "dct_language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "dct_type": {
+            "@id": "http://purl.org/dc/terms/type",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "dc_type": {
+            "@id": "http://purl.org/dc/elements/1.1/type"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "defaultGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultGraph",
+            "@type": "@id"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "drager": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#drager",
+            "@type": "@id"
+        },
+        "eenheid": {
+            "@id": "http://qudt.org/schema/qudt/unit",
+            "@type": "@id"
+        },
+        "email": {
+            "@id": "http://www.w3.org/2006/vcard/ns#hasEmail",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "exploitant": {
+            "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "forProperty": {
+            "@id": "http://www.w3.org/ns/ssn/forProperty",
+            "@type": "@id"
+        },
+        "gemeentecode": {
+            "@id": "http://purl.org/dc/terms/coverage",
+            "@type": "@id"
+        },
+        "gemeente": {
+            "@id": "http://www.w3.org/ns/locn#postName"
+        },
+        "geolocatie": {
+            "@id": "http://www.w3.org/ns/locn#geometry"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "hasFeatureOfInterest": {
+            "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+            "@type": "@id"
+        },
+        "hasGeometry": {
+            "@id": "http://www.opengis.net/ont/geosparql#hasGeometry",
+            "@type": "@id"
+        },
+        "hasOperatingProperty": {
+            "@id": "http://www.w3.org/ns/ssn/systems/hasOperatingProperty",
+            "@type": "@id"
+        },
+        "hasOperatingRange": {
+            "@id": "http://www.w3.org/ns/ssn/systems/hasOperatingRange",
+            "@type": "@id"
+        },
+        "hasProcedureForProperty": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#hasProcedureForProperty",
+            "@type": "@id"
+        },
+        "hasProperty": {
+            "@id": "http://www.w3.org/ns/ssn/hasProperty",
+            "@type": "@id"
+        },
+        "hasResult": {
+            "@id": "http://www.w3.org/ns/sosa/hasResult",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "hoofdvestiging": {
+            "@id": "http://www.w3.org/ns/org#hasRegisteredSite",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "_id": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "inrichtingnummer": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#inrichtingsnummer"
+        },
+        "inrichtingsnummer": {
+            "@type": "https://data.lzs.omgeving.vlaanderen.be/id/datatype/inrichtingsnummer",
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "integer_value": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "intervalcategorie": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#intervalcategorie"
+        },
+        "inXSDDateTime": {
+            "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "isDeelVan": {
+            "@id": "http://purl.org/dc/terms/isPartOf",
+            "@type": "@id"
+        },
+        "isPropertyOf": {
+            "@id": "http://www.w3.org/ns/ssn/isPropertyOf",
+            "@type": "@id"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "kwalitatieve_waarde": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "land": {
+            "@id": "http://www.w3.org/ns/locn#adminUnitL1"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "lokaleId": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "locatie": {
+            "@id": "http://www.w3.org/ns/locn#location",
+            "@type": "@id"
+        },
+        "madeBySensor": {
+            "@id": "http://www.w3.org/ns/sosa/madeBySensor",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "maxValue": {
+            "@id": "https://schema.org/maxValue",
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "minValue": {
+            "@id": "https://schema.org/minValue",
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        "naam": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "normstatus": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#normstatus",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "numerieke_waarde": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        "nummer": {
+            "@id": "http://www.w3.org/ns/locn#locatorDesignator"
+        },
+        "observedProperty": {
+            "@id": "http://www.w3.org/ns/sosa/observedProperty",
+            "@type": "@id"
+        },
+        "ondernemingsnummer": {
+            "@id": "http://www.w3.org/ns/org#identifier"
+        },
+        "operatie": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#operatie",
+            "@language": "nl"
+        },
+        "organisatie": {
+            "@id": "http://www.w3.org/2006/vcard/ns#org",
+            "@type": "@id"
+        },
+        "organisatienaam": {
+            "@id": "http://www.w3.org/2006/vcard/ns#organization-name"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "parametereenheid": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#parametereenheid",
+            "@type": "@id"
+        },
+        "parameter": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#parameterDimensie",
+            "@type": "@id"
+        },
+        "parameterwaarde": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#parameterwaarde",
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        "phenomenonTime": {
+            "@id": "http://www.w3.org/ns/sosa/phenomenonTime",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "postcode": {
+            "@id": "http://www.w3.org/ns/locn#postCode"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "provenance": {
+            "@id": "http://purl.org/dc/terms/provenance"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "rechtspersoonlijkheid": {
+            "@id": "http://www.w3.org/ns/org#classificatie",
+            "@type": "@id"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id"
+        },
+        "referentiewaardeType": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#referentiewaardeType"
+        },
+        "related": {
+            "@id": "http://www.w3.org/2004/02/skos/core#related",
+            "@type": "@id"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "relevantCodeList": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#relevantCodeList",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "relevantDataType": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#relevantDataType",
+            "@type": "@id"
+        },
+        "relevantLZS": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#relevantLZS",
+            "@type": "@id"
+        },
+        "relevantProperty": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#relevantProperty",
+            "@type": "@id"
+        },
+        "relevantQuantityKind": {
+            "@id": "http://qudt.org/schema/qudt/relevantQuantityKind",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "relevantSystem": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#relevantSystem",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "relevantUnit": {
+            "@id": "http://qudt.org/schema/qudt/relevantUnit",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "result": {
+            "@id": "http://www.w3.org/ns/sosa/hasResult",
+            "@type": "@id"
+        },
+        "resultTime": {
+            "@id": "http://www.w3.org/ns/sosa/resultTime",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "schemaAgency": {
+            "@id": "http://www.w3.org/ns/adms#schemaAgency"
+        },
+        "scopeNote": {
+            "@id": "http://www.w3.org/2004/02/skos/core#scopeNote",
+            "@language": "nl"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "severity": {
+            "@id": "http://www.w3.org/ns/shacl#severity",
+            "@type": "@id"
+        },
+        "simple_result": {
+            "@id": "http://www.w3.org/ns/sosa/hasSimpleResult"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-graph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#graph",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "straatnaam": {
+            "@id": "http://www.w3.org/ns/locn#thoroughfare"
+        },
+        "subject": {
+            "@id": "http://purl.org/dc/terms/subject",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "systeem": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#systeemDimensie",
+            "@type": "@id"
+        },
+        "technischefiche": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#technischefiche",
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean"
+        },
+        "telefoon": {
+            "@id": "http://www.w3.org/2006/vcard/ns#hasTelephone",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "timePeriod": {
+            "@id": "http://purl.org/linked-data/sdmx/2009/dimension#timePeriod",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "_type": {
+            "@id": "@type",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "used": {
+            "@id": "http://www.w3.org/ns/prov#used",
+            "@type": "@id"
+        },
+        "usedProcedure": {
+            "@id": "http://www.w3.org/ns/sosa/usedProcedure",
+            "@type": "@id"
+        },
+        "value": {
+            "@id": "https://schema.org/value",
+            "@type": "http://www.w3.org/2001/XMLSchema#decimal"
+        },
+        "_value": "@value",
+        "dataleverancier": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#dataleverancier",
+            "@type": "@id"
+        },
+        "variabele": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#variabele",
+            "@type": "@id"
+        },
+        "vcard_note": {
+            "@id": "http://www.w3.org/2006/vcard/ns#note"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "vestiging": {
+            "@id": "http://www.w3.org/ns/org#hasSite",
+            "@type": "@id"
+        },
+        "vestigingsnummer": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#vestigingsnummer"
+        },
+        "volledigAdres": {
+            "@id": "http://www.w3.org/ns/locn#fullAddress"
+        },
+        "voornaam": {
+            "@id": "http://www.w3.org/2006/vcard/ns#given-name"
+        },
+        "waardebepaling": {
+            "@id": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#waardebepaling",
+            "@type": "@id"
+        },
+        "wasAssociatedWith": {
+            "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+            "@type": "@id"
+        },
+        "wasInformedBy": {
+            "@id": "http://www.w3.org/ns/prov#wasInformedBy",
+            "@type": "@id"
+        },
+        "concept": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/",
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/hoofdfunctie_stedenbouw/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "agent": "https://data.lzs.omgeving.vlaanderen.be/id/agent/",
+        "assettype": "http://purl.org/adms/assettype/",
+        "conceptscheme-alg": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/",
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "datasets": "https://datasets.omgeving.vlaanderen.be/",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcmitype": "http://purl.org/dc/dcmitype/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dr": "https://data.omgeving.vlaanderen.be/id/concept/drager/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "gml": "http://www.opengis.net/ont/gml#",
+        "gsp": "http://www.opengis.net/ont/geosparql#",
+        "iioa": "https://data.lzs.omgeving.vlaanderen.be/id/iioa/",
+        "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
+        "locn": "http://www.w3.org/ns/locn#",
+        "lzs-bandbreedte": "https://data.omgeving.vlaanderen.be/id/concept/lzs/norm_bandbreedte/",
+        "LZS": "https://data.lzs.omgeving.vlaanderen.be/id/installation/",
+        "lzs-medium": "https://data.omgeving.vlaanderen.be/id/concept/lzs/medium/",
+        "lzs-param": "https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter/",
+        "lzs-param-norm": "https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter_norm/",
+        "lzs-stalbezetting": "https://data.omgeving.vlaanderen.be/id/concept/lzs/stalbezetting/",
+        "lzs-status": "https://data.omgeving.vlaanderen.be/id/concept/lzs/status/",
+        "lzs-type": "https://data.omgeving.vlaanderen.be/id/concept/lzs/type/",
+        "lzs-vocab": "https://data.lzs.omgeving.vlaanderen.be/ns/vocab#",
+        "metadata": "https://data.omgeving.vlaanderen.be/ns/metadata#",
+        "observatie": "https://data.lzs.omgeving.vlaanderen.be/id/observation/",
+        "omg_catalog_doc": "https://data.omgeving.vlaanderen.be/doc/catalog/",
+        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
+        "omg_collection": "https://data.omgeving.vlaanderen.be/id/collection/",
+        "omg_dataservice": "https://data.omgeving.vlaanderen.be/id/dataservice/",
+        "omg_dataset_doc": "https://data.omgeving.vlaanderen.be/doc/dataset/",
+        "omg_dataset": "https://data.omgeving.vlaanderen.be/id/dataset/",
+        "omg_distribution_doc": "https://data.omgeving.vlaanderen.be/doc/distribution/",
+        "omg_distribution": "https://data.omgeving.vlaanderen.be/id/distribution/",
+        "omg_graphcollection": "https://data.omgeving.vlaanderen.be/id/graphcollection/",
+        "omg_graph": "https://data.omgeving.vlaanderen.be/id/graph/",
+        "omg": "https://data.vlaanderen.be/ns/omgevingsvergunning#",
+        "omg_id": "https://data.omgeving.vlaanderen.be/id/",
+        "omg_named_graph": "https://data.omgeving.vlaanderen.be/id/namedgraph/",
+        "omg_ontology": "https://data.omgeving.vlaanderen.be/id/ontology/",
+        "omg_package": "https://data.omgeving.vlaanderen.be/id/package/",
+        "omg_periodoftime": "https://data.omgeving.vlaanderen.be/id/periodoftime/",
+        "omg_service": "https://data.omgeving.vlaanderen.be/id/service/",
+        "omg_vcard": "https://data.omgeving.vlaanderen.be/id/vcard/",
+        "org": "http://www.w3.org/ns/org#",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "procedure": "https://data.omgeving.vlaanderen.be/id/concept/observatieprocedure/",
+        "property": "https://id.erfgoed.net/property/",
+        "provenancestatement": "https://data.omgeving.vlaanderen.be/id/provenancestatement/dataset/",
+        "prov": "http://www.w3.org/ns/prov#",
+        "qb": "http://purl.org/linked-data/cube#",
+        "quantitykind": "http://qudt.org/vocab/quantitykind/",
+        "qudt": "http://qudt.org/schema/qudt/",
+        "qudt-schema": "https://qudt.org/schema/qudt/",
+        "qudt-unit": "https://qudt.org/vocab/unit/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rechtspers": "https://data.cbb.omgeving.vlaanderen.be/id/concept/orgrechtspersoonlijkheid/",
+        "refnis2025": "http://vocab.belgif.be/auth/refnis2025/",
+        "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
+        "rov": "http://www.w3.org/ns/regorg#",
+        "schema": "https://schema.org/",
+        "sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+        "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+        "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "site": "https://data.lzs.omgeving.vlaanderen.be/id/site/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sosa": "http://www.w3.org/ns/sosa/",
+        "sosa-om": "http://www.w3.org/ns/sosa/om#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "ssn": "http://www.w3.org/ns/ssn/",
+        "ssn-system": "http://www.w3.org/ns/ssn/systems/",
+        "time": "http://www.w3.org/2006/time#",
+        "unit": "http://qudt.org/vocab/unit/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "vlarem-klasse": "https://data.omgeving.vlaanderen.be/id/concept/vlarem-klasse/",
+        "void": "http://rdfs.org/ns/void#",
+        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/"
+    },
+    "graph": [
+        {
+            "_id": "concept:dagrecreatie_met_inbegrip_van_sport",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Dagrecreatie, met inbegrip van sport",
+            "note": "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting",
+            "prefLabel": "Dagrecreatie, met inbegrip van sport",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:dancing_restaurant_en_cafe",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies.",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Dancing, restaurant en café",
+            "note": "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies.",
+            "prefLabel": "Dancing, restaurant en café",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:detailhandel",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Detailhandel",
+            "note": "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten",
+            "prefLabel": "Detailhandel",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw",
+            "theme": "gemet:7193"
+        },
+        {
+            "_id": "concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Gemeenschapsvoorzieningen en openbare nutsvoorzieningen",
+            "note": "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)",
+            "prefLabel": "Gemeenschapsvoorzieningen en openbare nutsvoorzieningen",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:industrie_en_bedrijvigheid",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Industrie en bedrijvigheid",
+            "note": "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten",
+            "prefLabel": "Industrie en bedrijvigheid",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw",
+            "theme": "gemet:19"
+        },
+        {
+            "_id": "concept:kantoorfunctie_dienstverlening_en_vrije_beroepen",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten.",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Kantoorfunctie, dienstverlening en vrije beroepen",
+            "note": "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten.",
+            "prefLabel": "Kantoorfunctie, dienstverlening en vrije beroepen",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:land_en_tuinbouw_in_de_ruime_zin",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Land- en tuinbouw in de ruime zin",
+            "note": "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren",
+            "prefLabel": "Land- en tuinbouw in de ruime zin",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw",
+            "theme": "gemet:232"
+        },
+        {
+            "_id": "concept:militaire_functie",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Werking ten behoeve van de krijgsmacht van de staat",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Militaire functie",
+            "note": "Werking ten behoeve van de krijgsmacht van de staat",
+            "prefLabel": "Militaire functie",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:verblijfsrecreatie",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Verblijfsrecreatie",
+            "note": "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft",
+            "prefLabel": "Verblijfsrecreatie",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "concept:wonen",
+            "_type": [
+                "skos:Concept"
+            ],
+            "definition": "Huisvesting van een gezin of alleenstaande",
+            "inScheme": "conceptscheme:hoofdfunctie_stedenbouw",
+            "code": "Wonen",
+            "note": "Huisvesting van een gezin of alleenstaande",
+            "prefLabel": "Wonen",
+            "topConceptOf": "conceptscheme:hoofdfunctie_stedenbouw"
+        },
+        {
+            "_id": "conceptscheme:hoofdfunctie_stedenbouw",
+            "_type": [
+                "skos:ConceptScheme"
+            ],
+            "definition": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
+            "hasTopConcept": [
+                "concept:dagrecreatie_met_inbegrip_van_sport",
+                "concept:dancing_restaurant_en_cafe",
+                "concept:detailhandel",
+                "concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
+                "concept:industrie_en_bedrijvigheid",
+                "concept:kantoorfunctie_dienstverlening_en_vrije_beroepen",
+                "concept:land_en_tuinbouw_in_de_ruime_zin",
+                "concept:militaire_functie",
+                "concept:verblijfsrecreatie",
+                "concept:wonen"
+            ],
+            "code": "Hoofdfunctie stedenbouw",
+            "note": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
+            "prefLabel": "Hoofdfunctie stedenbouw"
+        }
+    ]
+}

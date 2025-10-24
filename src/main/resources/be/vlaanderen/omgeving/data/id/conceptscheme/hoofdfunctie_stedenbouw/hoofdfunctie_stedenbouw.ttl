@@ -1,0 +1,177 @@
+@prefix concept: <https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/>.
+@prefix collectie: <https://data.omgeving.vlaanderen.be/id/collection/hoofdfunctie_stedenbouw/>.
+@prefix access_right: <http://publications.europa.eu/resource/authority/access-right/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix agent: <https://data.lzs.omgeving.vlaanderen.be/id/agent/>.
+@prefix assettype: <http://purl.org/adms/assettype/>.
+@prefix conceptscheme-alg: <https://data.omgeving.vlaanderen.be/id/conceptscheme/>.
+@prefix conceptscheme: <https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/>.
+@prefix country: <http://publications.europa.eu/resource/authority/country/>.
+@prefix datasets: <https://datasets.omgeving.vlaanderen.be/>.
+@prefix datatheme_be: <http://vocab.belgif.be/auth/datatheme/>.
+@prefix datatheme_eu: <http://publications.europa.eu/resource/authority/data-theme/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dr: <https://data.omgeving.vlaanderen.be/id/concept/drager/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix file_type: <http://publications.europa.eu/resource/authority/file-type/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix formats: <http://www.w3.org/ns/formats/>.
+@prefix frequency: <http://publications.europa.eu/resource/authority/frequency/>.
+@prefix gemet: <http://www.eionet.europa.eu/gemet/concept/>.
+@prefix gml: <http://www.opengis.net/ont/gml#>.
+@prefix gsp: <http://www.opengis.net/ont/geosparql#>.
+@prefix iioa: <https://data.lzs.omgeving.vlaanderen.be/id/iioa/>.
+@prefix licence: <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
+@prefix lzs-bandbreedte: <https://data.omgeving.vlaanderen.be/id/concept/lzs/norm_bandbreedte/>.
+@prefix LZS: <https://data.lzs.omgeving.vlaanderen.be/id/installation/>.
+@prefix lzs-medium: <https://data.omgeving.vlaanderen.be/id/concept/lzs/medium/>.
+@prefix lzs-param: <https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter/>.
+@prefix lzs-param-norm: <https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter_norm/>.
+@prefix lzs-stalbezetting: <https://data.omgeving.vlaanderen.be/id/concept/lzs/stalbezetting/>.
+@prefix lzs-status: <https://data.omgeving.vlaanderen.be/id/concept/lzs/status/>.
+@prefix lzs-type: <https://data.omgeving.vlaanderen.be/id/concept/lzs/type/>.
+@prefix lzs-vocab: <https://data.lzs.omgeving.vlaanderen.be/ns/vocab#>.
+@prefix metadata: <https://data.omgeving.vlaanderen.be/ns/metadata#>.
+@prefix observatie: <https://data.lzs.omgeving.vlaanderen.be/id/observation/>.
+@prefix omg_catalog_doc: <https://data.omgeving.vlaanderen.be/doc/catalog/>.
+@prefix omg_catalog: <https://data.omgeving.vlaanderen.be/id/catalog/>.
+@prefix omg_collection: <https://data.omgeving.vlaanderen.be/id/collection/>.
+@prefix omg_dataservice: <https://data.omgeving.vlaanderen.be/id/dataservice/>.
+@prefix omg_dataset_doc: <https://data.omgeving.vlaanderen.be/doc/dataset/>.
+@prefix omg_dataset: <https://data.omgeving.vlaanderen.be/id/dataset/>.
+@prefix omg_distribution_doc: <https://data.omgeving.vlaanderen.be/doc/distribution/>.
+@prefix omg_distribution: <https://data.omgeving.vlaanderen.be/id/distribution/>.
+@prefix omg_graphcollection: <https://data.omgeving.vlaanderen.be/id/graphcollection/>.
+@prefix omg_graph: <https://data.omgeving.vlaanderen.be/id/graph/>.
+@prefix omg: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix omg_id: <https://data.omgeving.vlaanderen.be/id/>.
+@prefix omg_named_graph: <https://data.omgeving.vlaanderen.be/id/namedgraph/>.
+@prefix omg_ontology: <https://data.omgeving.vlaanderen.be/id/ontology/>.
+@prefix omg_package: <https://data.omgeving.vlaanderen.be/id/package/>.
+@prefix omg_periodoftime: <https://data.omgeving.vlaanderen.be/id/periodoftime/>.
+@prefix omg_service: <https://data.omgeving.vlaanderen.be/id/service/>.
+@prefix omg_vcard: <https://data.omgeving.vlaanderen.be/id/vcard/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix ovo: <http://data.vlaanderen.be/id/organisatie/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix procedure: <https://data.omgeving.vlaanderen.be/id/concept/observatieprocedure/>.
+@prefix property: <https://id.erfgoed.net/property/>.
+@prefix provenancestatement: <https://data.omgeving.vlaanderen.be/id/provenancestatement/dataset/>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix qb: <http://purl.org/linked-data/cube#>.
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/>.
+@prefix qudt: <http://qudt.org/schema/qudt/>.
+@prefix qudt-schema: <https://qudt.org/schema/qudt/>.
+@prefix qudt-unit: <https://qudt.org/vocab/unit/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rechtspers: <https://data.cbb.omgeving.vlaanderen.be/id/concept/orgrechtspersoonlijkheid/>.
+@prefix refnis2025: <http://vocab.belgif.be/auth/refnis2025/>.
+@prefix repo: <https://repo.omgeving.vlaanderen.be/artifactory/release/>.
+@prefix rov: <http://www.w3.org/ns/regorg#>.
+@prefix schema: <https://schema.org/>.
+@prefix sdmx-attribute: <http://purl.org/linked-data/sdmx/2009/attribute#>.
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>.
+@prefix sdmx-measure: <http://purl.org/linked-data/sdmx/2009/measure#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix site: <https://data.lzs.omgeving.vlaanderen.be/id/site/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/>.
+@prefix sosa-om: <http://www.w3.org/ns/sosa/om#>.
+@prefix spdx: <http://spdx.org/rdf/terms#>.
+@prefix ssd: <http://www.w3.org/ns/sparql-service-description#>.
+@prefix ssn: <http://www.w3.org/ns/ssn/>.
+@prefix ssn-system: <http://www.w3.org/ns/ssn/systems/>.
+@prefix time: <http://www.w3.org/2006/time#>.
+@prefix unit: <http://qudt.org/vocab/unit/>.
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
+@prefix vlarem-klasse: <https://data.omgeving.vlaanderen.be/id/concept/vlarem-klasse/>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix wise: <http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/>.
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+concept:dagrecreatie_met_inbegrip_van_sport a skos:Concept;
+    skos:definition "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Dagrecreatie, met inbegrip van sport";
+    skos:note "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting"@nl;
+    skos:prefLabel "Dagrecreatie, met inbegrip van sport"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:dancing_restaurant_en_cafe a skos:Concept;
+    skos:definition "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies."@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Dancing, restaurant en café";
+    skos:note "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies."@nl;
+    skos:prefLabel "Dancing, restaurant en café"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:detailhandel a skos:Concept;
+    skos:definition "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Detailhandel";
+    skos:note "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten"@nl;
+    skos:prefLabel "Detailhandel"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw;
+    dcat:theme gemet:7193.
+concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen a skos:Concept;
+    skos:definition "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Gemeenschapsvoorzieningen en openbare nutsvoorzieningen";
+    skos:note "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)"@nl;
+    skos:prefLabel "Gemeenschapsvoorzieningen en openbare nutsvoorzieningen"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:industrie_en_bedrijvigheid a skos:Concept;
+    skos:definition "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Industrie en bedrijvigheid";
+    skos:note "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten"@nl;
+    skos:prefLabel "Industrie en bedrijvigheid"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw;
+    dcat:theme gemet:19.
+concept:kantoorfunctie_dienstverlening_en_vrije_beroepen a skos:Concept;
+    skos:definition "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten."@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Kantoorfunctie, dienstverlening en vrije beroepen";
+    skos:note "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten."@nl;
+    skos:prefLabel "Kantoorfunctie, dienstverlening en vrije beroepen"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:land_en_tuinbouw_in_de_ruime_zin a skos:Concept;
+    skos:definition "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Land- en tuinbouw in de ruime zin";
+    skos:note "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren"@nl;
+    skos:prefLabel "Land- en tuinbouw in de ruime zin"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw;
+    dcat:theme gemet:232.
+concept:militaire_functie a skos:Concept;
+    skos:definition "Werking ten behoeve van de krijgsmacht van de staat"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Militaire functie";
+    skos:note "Werking ten behoeve van de krijgsmacht van de staat"@nl;
+    skos:prefLabel "Militaire functie"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:verblijfsrecreatie a skos:Concept;
+    skos:definition "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Verblijfsrecreatie";
+    skos:note "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft"@nl;
+    skos:prefLabel "Verblijfsrecreatie"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+concept:wonen a skos:Concept;
+    skos:definition "Huisvesting van een gezin of alleenstaande"@nl;
+    skos:inScheme conceptscheme:hoofdfunctie_stedenbouw;
+    skos:notation "Wonen";
+    skos:note "Huisvesting van een gezin of alleenstaande"@nl;
+    skos:prefLabel "Wonen"@nl;
+    skos:topConceptOf conceptscheme:hoofdfunctie_stedenbouw.
+conceptscheme:hoofdfunctie_stedenbouw a skos:ConceptScheme;
+    skos:definition "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen"@nl;
+    skos:hasTopConcept concept:dagrecreatie_met_inbegrip_van_sport, concept:dancing_restaurant_en_cafe, concept:detailhandel, concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen, concept:industrie_en_bedrijvigheid, concept:kantoorfunctie_dienstverlening_en_vrije_beroepen, concept:land_en_tuinbouw_in_de_ruime_zin, concept:militaire_functie, concept:verblijfsrecreatie, concept:wonen;
+    skos:notation "Hoofdfunctie stedenbouw";
+    skos:note "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen"@nl;
+    skos:prefLabel "Hoofdfunctie stedenbouw"@nl.
