@@ -9,14 +9,14 @@
   <packaging>jar</packaging>
   <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
   <artifactId>codelijst-hoofdfunctie_stedenbouw</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1-SNAPSHOT</version>
   <name>codelijst-hoofdfunctie_stedenbouw</name>
   <description />
   <scm>
     <connection>scm:git:https://github.com/milieuinfo/codelijst-hoofdfunctie_stedenbouw.git</connection>
     <developerConnection>scm:git:https://github.com/milieuinfo/codelijst-hoofdfunctie_stedenbouw.git</developerConnection>
     <url>https://github.com/milieuinfo/codelijst-hoofdfunctie_stedenbouw.git</url>
-    <tag>codelijst-hoofdfunctie_stedenbouw-0.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <build>
     <plugins>
