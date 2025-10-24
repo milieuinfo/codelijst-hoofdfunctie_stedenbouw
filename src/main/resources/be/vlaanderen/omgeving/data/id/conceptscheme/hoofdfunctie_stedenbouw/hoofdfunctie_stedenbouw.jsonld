@@ -653,7 +653,7 @@
             "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
             "@type": "@id"
         },
-        "_type": {
+        "type": {
             "@id": "@type",
             "@type": "@id",
             "@container": "@set"
@@ -791,7 +791,7 @@
     "graph": [
         {
             "id": "concept:dagrecreatie_met_inbegrip_van_sport",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting",
@@ -803,7 +803,7 @@
         },
         {
             "id": "concept:dancing_restaurant_en_cafe",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies.",
@@ -815,7 +815,7 @@
         },
         {
             "id": "concept:detailhandel",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten",
@@ -828,7 +828,7 @@
         },
         {
             "id": "concept:gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)",
@@ -840,7 +840,7 @@
         },
         {
             "id": "concept:industrie_en_bedrijvigheid",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten",
@@ -853,7 +853,7 @@
         },
         {
             "id": "concept:kantoorfunctie_dienstverlening_en_vrije_beroepen",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten.",
@@ -865,7 +865,7 @@
         },
         {
             "id": "concept:land_en_tuinbouw_in_de_ruime_zin",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren",
@@ -878,7 +878,7 @@
         },
         {
             "id": "concept:militaire_functie",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Werking ten behoeve van de krijgsmacht van de staat",
@@ -890,7 +890,7 @@
         },
         {
             "id": "concept:verblijfsrecreatie",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft",
@@ -902,7 +902,7 @@
         },
         {
             "id": "concept:wonen",
-            "_type": [
+            "type": [
                 "skos:Concept"
             ],
             "definition": "Huisvesting van een gezin of alleenstaande",
@@ -914,7 +914,7 @@
         },
         {
             "id": "conceptscheme:hoofdfunctie_stedenbouw",
-            "_type": [
+            "type": [
                 "skos:ConceptScheme"
             ],
             "definition": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",

@@ -652,7 +652,7 @@
     "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
     "@type": "@id"
   },
-  "_type": {
+  "type": {
     "@id": "@type",
     "@type": "@id",
     "@container": "@set"

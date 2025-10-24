@@ -1,7 +1,7 @@
 [
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dagrecreatie_met_inbegrip_van_sport",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Vorm van recreatie die niet langer duurt dan een dag, en waarbij dus geen sprake is van overnachting",
@@ -13,7 +13,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/dancing_restaurant_en_cafe",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Bedrijfstak die zich bezighoudt met eten, drinken en dansgelegenheden. Horeca, maar dan zonder de logies.",
@@ -25,7 +25,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/detailhandel",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Bedrijfstak die zich bezighoudt met de verkoop van fysieke goederen aan consumenten",
@@ -38,7 +38,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/gemeenschapsvoorzieningen_en_openbare_nutsvoorzieningen",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Voorzieningen die gericht zijn op de bevordering van het algemeen belang en die ten dienste van de gemeenschap worden gesteld (Bron: 8 JULI 1997. Omzendbrief betreffende de inrichting en de toepassing van de ontwerp-gewestplannen en gewestplannen, gewijzigd via omzendbrief dd. 25/1/2002 en 25/10/2002)",
@@ -50,7 +50,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/industrie_en_bedrijvigheid",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Bedrijfstak die zich bezighoudt met de verwerking van grondstoffen tot (half)producten",
@@ -63,7 +63,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/kantoorfunctie_dienstverlening_en_vrije_beroepen",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Bedrijfstak die zich bezighoudt met het verlenen van diensten, inclusief administratieve werkzaamheden en intellectuele diensten.",
@@ -75,7 +75,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/land_en_tuinbouw_in_de_ruime_zin",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Bedrijfstak die zich bezighoudt met de productie van paddestoelen, planten en dieren",
@@ -88,7 +88,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/militaire_functie",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Werking ten behoeve van de krijgsmacht van de staat",
@@ -100,7 +100,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/verblijfsrecreatie",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Vorm van recreatie waarbij de recreant voor een bepaalde tijd, maar ten minste een nacht, in het recreatiegebied of de toeristische plaats verblijft",
@@ -112,7 +112,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/concept/hoofdfunctie_stedenbouw/wonen",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#Concept"
         ],
         "definition": "Huisvesting van een gezin of alleenstaande",
@@ -124,7 +124,7 @@
     },
     {
         "id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/hoofdfunctie_stedenbouw",
-        "_type": [
+        "type": [
             "http://www.w3.org/2004/02/skos/core#ConceptScheme"
         ],
         "definition": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
