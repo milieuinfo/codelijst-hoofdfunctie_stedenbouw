@@ -80,58 +80,58 @@ metadata :
     uri : https://data.omgeving.vlaanderen.be/id/catalog/codelijst
     type: http://www.w3.org/ns/dcat#Catalog
   dataset :
-    title: "Dataset van codelijsten i.v.m. hoofdfuncties stedenbouw voor stallen, gericht op de reductie van stikstofuitstoot."
-    description: "Deze dataset bevat codelijsten i.v.m. hoofdfuncties stedenbouw voor stallen, gericht op de reductie van stikstofuitstoot. De codelijsten hebben een onderlinge samenhang, bv. types van hoofdfuncties stedenbouw met specifieke regels. De lijsten worden gebruikt bij de een IOT-opzet, i.e. sensordata die aangeleverd worden voor de monitoring van deze systemen. Deze momitoring is opgezet in het kader van het ARMOS-project."
+    title: "Dataset met de codelijst van de hoofdfuncties stedenbouw"
+    description: "Deze dataset bevat de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
     temporal : https://data.omgeving.vlaanderen.be/id/periodoftime/dataset_omg
     type : http://www.w3.org/ns/dcat#Dataset
     provenance:
-      label: "Deze combinatie van codelijsten kwam tot stand in het kader van het ARMOS-project en is een representatie van de logica en typering, die vervat is in regelgeving rond reductie van ammoniakemissie van stallen."
+      label: "De vraag naar deze codelijst kwam vanuit het ARMOS-project rond reductie van ammoniakemissie van stallen, maar het beoogd gebruik richt zich ook binnen het processen van vergunningsverlening of handhaving."
   distribution :
     parquet:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als parquet-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als parquet bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als parquet-formaat."
+      description: "Serialisatie als parquet bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType: https://www.iana.org/assignments/media-types/application/vnd.apache.parquet
       format: http://publications.europa.eu/resource/authority/file-type/PARQUET
       type: http://www.w3.org/ns/dcat#Distribution
     xlsx:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als excel-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als excel bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als excel-formaat."
+      description: "Serialisatie als excel bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType: https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
       format: http://publications.europa.eu/resource/authority/file-type/XLSX
       type: http://www.w3.org/ns/dcat#Distribution
     csv :
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als csv-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als csv bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als csv-formaat."
+      description: "Serialisatie als csv bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType : https://www.iana.org/assignments/media-types/text/csv
       format : http://publications.europa.eu/resource/authority/file-type/CSV
       type : http://www.w3.org/ns/dcat#Distribution
     nt:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als n-triple-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als n-triple bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als n-triple-formaat."
+      description: "Serialisatie als n-triple bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType: https://www.iana.org/assignments/media-types/application/n-triples
       format: http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES
       type: http://www.w3.org/ns/dcat#Distribution
     json:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als json-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als json bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als json-formaat."
+      description: "Serialisatie als json bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType: https://www.iana.org/assignments/media-types/application/json
       format: http://publications.europa.eu/resource/authority/file-type/JSON
       type: http://www.w3.org/ns/dcat#Distribution
     ttl:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als turtle-formaat."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als turtle-formaat."
       description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als turtle bestand."
       mediaType: https://www.iana.org/assignments/media-types/text/turtle
       format: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
       type : http://www.w3.org/ns/dcat#Distribution
     jsonld:
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als ld+json-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, geserialiseerd als json-ld bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, geserialiseerd als ld+json-formaat."
+      description: "Serialisatie als json-ld bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType: https://www.iana.org/assignments/media-types/application/ld+json
       format: http://publications.europa.eu/resource/authority/file-type/JSON_LD
       type : http://www.w3.org/ns/dcat#Distribution
     jar :
-      title: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, alle verspreidingsvormen samengevoegd in een jar-formaat."
-      description: "Codelijsten ivm. hoofdfuncties stedenbouw voor stallen, alle verspreidingsvormen samengevoegd in een jar bestand."
+      title: "Codelijst van de hoofdfuncties stedenbouw, alle verspreidingsvormen samengevoegd in een jar-formaat."
+      description: "Alle verspreidingsvormen samengevoegd in een jar bestand van de codelijst met de functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen."
       mediaType : https://www.iana.org/assignments/media-types/application/java-archive
       format : http://publications.europa.eu/resource/authority/file-type/JAR
       type :
@@ -141,9 +141,10 @@ metadata :
 prefixes :
   access_right: http://publications.europa.eu/resource/authority/access-right/
   adms: http://www.w3.org/ns/adms#
+  agent: https://data.lzs.omgeving.vlaanderen.be/id/agent/
   assettype: http://purl.org/adms/assettype/
   conceptscheme-alg: https://data.omgeving.vlaanderen.be/id/conceptscheme/
-  conceptscheme: https://data.omgeving.vlaanderen.be/id/conceptscheme/hoofdfunctiesstedenbouw/
+  conceptscheme: https://data.omgeving.vlaanderen.be/id/conceptscheme/lzs/
   country: http://publications.europa.eu/resource/authority/country/
   datasets: https://datasets.omgeving.vlaanderen.be/
   datatheme_be: http://vocab.belgif.be/auth/datatheme/
@@ -162,9 +163,20 @@ prefixes :
   gemet: http://www.eionet.europa.eu/gemet/concept/
   gml: http://www.opengis.net/ont/gml#
   gsp: http://www.opengis.net/ont/geosparql#
+  iioa: https://data.lzs.omgeving.vlaanderen.be/id/iioa/
   licence: http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/
   locn: http://www.w3.org/ns/locn#
+  lzs-bandbreedte: https://data.omgeving.vlaanderen.be/id/concept/lzs/norm_bandbreedte/
+  LZS: https://data.lzs.omgeving.vlaanderen.be/id/installation/
+  lzs-medium: https://data.omgeving.vlaanderen.be/id/concept/lzs/medium/
+  lzs-param: https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter/
+  lzs-param-norm: https://data.omgeving.vlaanderen.be/id/concept/lzs/parameter_norm/
+  lzs-stalbezetting: https://data.omgeving.vlaanderen.be/id/concept/lzs/stalbezetting/
+  lzs-status: https://data.omgeving.vlaanderen.be/id/concept/lzs/status/
+  lzs-type: https://data.omgeving.vlaanderen.be/id/concept/lzs/type/
+  lzs-vocab: https://data.lzs.omgeving.vlaanderen.be/ns/vocab#
   metadata: https://data.omgeving.vlaanderen.be/ns/metadata#
+  observatie: https://data.lzs.omgeving.vlaanderen.be/id/observation/
   omg_catalog_doc: https://data.omgeving.vlaanderen.be/doc/catalog/
   omg_catalog: https://data.omgeving.vlaanderen.be/id/catalog/
   omg_collection: https://data.omgeving.vlaanderen.be/id/collection/
