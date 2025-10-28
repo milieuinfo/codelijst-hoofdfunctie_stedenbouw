@@ -722,8 +722,7 @@
         "access_right": "http://publications.europa.eu/resource/authority/access-right/",
         "adms": "http://www.w3.org/ns/adms#",
         "assettype": "http://purl.org/adms/assettype/",
-        "conceptscheme-alg": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
-        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/hoofdfunctiesstedenbouw/",
+        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
         "country": "http://publications.europa.eu/resource/authority/country/",
         "datasets": "https://datasets.omgeving.vlaanderen.be/",
         "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
@@ -905,7 +904,7 @@
             "type": [
                 "skos:ConceptScheme"
             ],
-            "definition": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
+            "definition": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
             "hasTopConcept": [
                 "concept:dagrecreatie_met_inbegrip_van_sport",
                 "concept:dancing_restaurant_en_cafe",
@@ -919,7 +918,7 @@
                 "concept:wonen"
             ],
             "code": "Hoofdfunctie stedenbouw",
-            "note": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
+            "note": "De functies die in kader van een omgevingsvergunning voor stedenbouwkundige handelingen als hoofdfunctie beschouwd worden in Artikel 2, § 1, van het Besluit van de Vlaamse Regering van 14 april 2000 tot bepaling van de vergunningsplichtige functiewijzigingen",
             "prefLabel": "Hoofdfunctie stedenbouw"
         }
     ]
