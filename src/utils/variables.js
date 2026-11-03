@@ -19,6 +19,10 @@ const context_prefixes = Object.assign({},context , prefixes)
 const frame_skos_prefixes = {
     "@context": context_prefixes,
     "@type": ["rdfs:Resource", "skos:ConceptScheme", "skos:Concept", "http://qudt.org/schema/qudt/QuantityKind"],
+    "theme": {
+        "@embed": "@never",
+        "@omitDefault": true
+    },
     "member": {
         "@type": "skos:Concept",
         "@embed": "@never",
@@ -156,6 +160,10 @@ const frame_skos_prefixes = {
 const frame_skos_no_prefixes = {
     "@context": context,
     "type": ["http://www.w3.org/2004/02/skos/core#ConceptScheme", "http://www.w3.org/2004/02/skos/core#Concept", "http://qudt.org/schema/qudt/QuantityKind"],
+    "theme": {
+        "@embed": "@never",
+        "@omitDefault": true
+    },
     "member": {
         "@type": "http://www.w3.org/2004/02/skos/core#Concept",
         "@embed": "@never",
@@ -324,10 +332,6 @@ const jsonOptions = {"file": config.skos.path + config.skos.name + '/' + config.
 
 const parquetOptions = {"file": config.skos.path + config.skos.name + '/' + config.skos.name + config.skos.parquet, "frame": frame_skos_no_prefixes}
 
-const excelOptions = {"file": config.skos.path + config.skos.name + '/' + config.skos.name + config.skos.xlsx,
-    "sourcefile": config.skos.path + config.skos.name + '/' + config.skos.name + config.skos.csv,
-    "sheetName": config.types}
-
 const skos_prefixes = Object.assign( {}, config.skos.prefixes, config.prefixes, { '@base' : config.skos.prefixes.concept })
 
 const skos_context = JSON.parse(readFileSync(config.source.path + config.source.context));
@@ -357,12 +361,11 @@ const skosOptions = {
     "ntriplesPath": ntriplesPath,
     "csvOptions": csvOptions,
     "parquetOptions": parquetOptions,
-    "excelOptions": excelOptions,
     //"xsdOptions": xsdOptions
 }
 
 const skosSource = {
-    "sourcePath": config.source.path + config.source.codelijst_csv,
+    "sourcePaths": config.source.codelijst_csv.map(csv => config.source.path + csv),
     "contextPrefixes": Object.assign({},skos_context , skos_prefixes),
     "rules": config.skos.rules,
     "shapesDataset": await rdf.dataset().import(rdf.fromFile(config.ap.path + config.ap.name + '-' + config.ap.type + '/' + config.ap.name + '-' + config.ap.type + config.ap.turtle)),
